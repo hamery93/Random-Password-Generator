@@ -8,15 +8,15 @@ var symbol = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~".split("")
 
 // Parseint converts string to number
 
-// The below function has all info for pass options
+// The below function has info for pass options
 
 function getPasswordOptions() {
 
   var passwordLength = parseInt(prompt("How many characters would you like your password to be?"));
 
-  // This if statement makes sure the password length is between 8-128 characters 
+  // This while statement makes sure the password length is between 8-128 characters 
 
-  if (passwordLength < 8 || passwordLength > 128) {
+  while (passwordLength < 8 || passwordLength > 128) {
     passwordLength = prompt(" How many characters would you like your password to be? Must be 8-128 characters");
   }
  
